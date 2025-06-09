@@ -1,0 +1,17 @@
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\bin\Debug\net9.0\JJ.INFRASTRUCTURE.deps.json
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\bin\Debug\net9.0\JJ.INFRASTRUCTURE.runtimeconfig.json
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\bin\Debug\net9.0\JJ.INFRASTRUCTURE.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\bin\Debug\net9.0\JJ.INFRASTRUCTURE.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\bin\Debug\net9.0\JJ.DOMAIN.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\bin\Debug\net9.0\JJ.DOMAIN.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.csproj.AssemblyReference.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.AssemblyInfoInputs.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.AssemblyInfo.cs
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRA.893EB51B.Up2Date
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\refint\JJ.INFRASTRUCTURE.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\JJ.INFRASTRUCTURE.genruntimeconfig.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.INFRASTRUCTURE\obj\Debug\net9.0\ref\JJ.INFRASTRUCTURE.dll

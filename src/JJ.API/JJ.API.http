@@ -1,0 +1,6 @@
+@JJ.API_HostAddress = http://localhost:32790
+
+GET {{JJ.API_HostAddress}}
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\bin\Debug\net9.0\JJ.DOMAIN.deps.json
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\bin\Debug\net9.0\JJ.DOMAIN.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\bin\Debug\net9.0\JJ.DOMAIN.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\JJ.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\JJ.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\JJ.DOMAIN.AssemblyInfo.cs
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\JJ.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\JJ.DOMAIN.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\refint\JJ.DOMAIN.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\JJ.DOMAIN.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.DOMAIN\obj\Debug\net9.0\ref\JJ.DOMAIN.dll

@@ -1,0 +1,15 @@
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\bin\Debug\net9.0\JJ.APPLICATION.deps.json
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\bin\Debug\net9.0\JJ.APPLICATION.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\bin\Debug\net9.0\JJ.APPLICATION.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\bin\Debug\net9.0\JJ.DOMAIN.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\bin\Debug\net9.0\JJ.DOMAIN.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLICATION.csproj.AssemblyReference.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLICATION.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLICATION.AssemblyInfoInputs.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLICATION.AssemblyInfo.cs
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLICATION.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLI.7028E19A.Up2Date
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLICATION.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\refint\JJ.APPLICATION.dll
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\JJ.APPLICATION.pdb
+C:\Users\Pedro Almeida\source\repos\JUNIORJUNIOR\src\JJ.APPLICATION\obj\Debug\net9.0\ref\JJ.APPLICATION.dll

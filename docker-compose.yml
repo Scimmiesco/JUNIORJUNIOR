@@ -1,0 +1,42 @@
+services:
+  #SQL Server
+  db:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: jj-db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "juniorJunior123@!" 
+      DATABASE: JJDB
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  #API
+  jj.api:
+    image: ${DOCKER_REGISTRY-}jjapi
+    container_name: jj-api
+    build:
+      context: .
+      dockerfile: src/JJ.API/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__DefaultConnection=Server=db;Database=JJ_DB;User Id=sa;Password=juniorJunior123@!;TrustServerCertificate=True
+    depends_on:
+      - db 
+
+  #Frontend
+  frontend:
+    container_name: jj-frontend
+    build:
+      context: ./frontend/JUNIIORFRONT
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - jj.api 
+
+volumes:
+  sqlserver_data:
