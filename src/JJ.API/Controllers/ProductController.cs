@@ -1,6 +1,5 @@
 ﻿using JJ.APPLICATION.DTOs;
 using JJ.APPLICATION.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JJ.API.Controllers
@@ -12,17 +11,16 @@ namespace JJ.API.Controllers
         private readonly IServiceProduct _productService = productService;
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<DataResponseDto<ProductDTO[]>>> GetAll()
         {
             try
             {
                 var productsDto = await _productService.GetAllProductsAsync();
-
                 return Ok(productsDto);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Ocorreu um erro interno. Por favor, tente novamente mais tarde.");
+                return StatusCode(500, new DataResponseDto<ProductDTO[]>("Ocorreu um erro interno. Por favor, tente novamente mais tarde."));
             }
         }
 
@@ -31,54 +29,58 @@ namespace JJ.API.Controllers
         {
             try
             {
-                if (pageNumber.Equals(0) || pageSize.Equals(0))
+                if (pageNumber <= 0 || pageSize <= 0)
                     return BadRequest(new PaginatedResponseDto<ProductDTO>("Os parâmetros pageNumber e pageSize devem ser maiores que zero."));
 
-                return await _productService.GetAllPaginatedProductsAsync(pageNumber, pageSize);
+                var result = await _productService.GetAllPaginatedProductsAsync(pageNumber, pageSize);
+                return Ok(result);
             }
             catch (Exception ex)
             {
-                return new PaginatedResponseDto<ProductDTO>("Ocorreu um erro interno. Por favor, tente novamente mais tarde");
+                return StatusCode(500, new PaginatedResponseDto<ProductDTO>("Ocorreu um erro interno. Por favor, tente novamente mais tarde."));
             }
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}", Name = "GetProductById")]
         public async Task<ActionResult<DataResponseDto<ProductDTO>>> GetByID(int id)
         {
             try
             {
                 var productDto = await _productService.GetProductByIdAsync(id);
 
-                if (productDto == null)
+                if (productDto.Data == null)
                 {
-                    return NotFound();
+                    return NotFound(new DataResponseDto<ProductDTO>("Produto com o ID fornecido não foi encontrado."));
                 }
 
                 return Ok(productDto);
             }
+            catch (ArgumentException arg)
+            {
+                return BadRequest(new DataResponseDto<ProductDTO>(arg.Message));
+            }
             catch (Exception ex)
             {
-                return StatusCode(500, "Ocorreu um erro interno. Por favor, tente novamente mais tarde.");
+                return StatusCode(500, new DataResponseDto<ProductDTO>("Ocorreu um erro interno. Por favor, tente novamente mais tarde."));
             }
         }
 
         [HttpPost]
         public async Task<ActionResult<DataResponseDto<ProductDTO>>> Create([FromBody] CreateUpdateProductDTO dto)
         {
-            if (dto == null)
-            {
-                return BadRequest("Os dados do produto não podem ser nulos.");
-            }
-
             try
             {
                 var createdProductDto = await _productService.CreateProductAsync(dto);
 
-                return Ok(createdProductDto);
+                return CreatedAtAction(nameof(GetByID), new { id = createdProductDto.Data.Id }, createdProductDto);
+            }
+            catch (ArgumentException arg)
+            {
+                return BadRequest(new DataResponseDto<ProductDTO>(arg.Message));
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Ocorreu um erro interno. Por favor, tente novamente mais tarde.");
+                return StatusCode(500, new DataResponseDto<ProductDTO>("Ocorreu um erro interno. Por favor, tente novamente mais tarde."));
             }
         }
 
@@ -87,13 +89,16 @@ namespace JJ.API.Controllers
         {
             try
             {
-                var deletedProduct = await _productService.DeleteProductAsync(id);
-
+                await _productService.DeleteProductAsync(id);
                 return NoContent();
+            }
+            catch (ArgumentException arg)
+            {
+                return NotFound(new ResponseDto(arg.Message));
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Ocorreu um erro interno. Por favor, tente novamente mais tarde.");
+                return StatusCode(500, new ResponseDto("Ocorreu um erro interno. Por favor, tente novamente mais tarde."));
             }
         }
     }

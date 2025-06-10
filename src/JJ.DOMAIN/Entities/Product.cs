@@ -11,10 +11,10 @@
         private Product() { }
         public Product(string name, decimal price, string imageUrl)
         {
-            ArgumentException.ThrowIfNullOrWhiteSpace(name, nameof(name));
+            ArgumentException.ThrowIfNullOrWhiteSpace(name);
 
             if (price <= 0)
-                throw new ArgumentException("O preço deve ser maior que zero.", nameof(price));
+                throw new ArgumentException("O preço deve ser maior que zero.");
 
             ValidateImageUrl(imageUrl);
 
@@ -29,14 +29,14 @@
         public void UpdatePrice(decimal newPrice)
         {
             if (newPrice <= 0)
-                throw new ArgumentException("O novo preço deve ser maior que zero.", nameof(newPrice));
+                throw new ArgumentException("O novo preço deve ser maior que zero.");
 
             Price = newPrice;
         }
 
         public void AddOrChangeImage(string imageUrl)
         {
-            ArgumentException.ThrowIfNullOrWhiteSpace(imageUrl, nameof(imageUrl));
+            ArgumentException.ThrowIfNullOrWhiteSpace(imageUrl);
 
             ValidateImageUrl(imageUrl);
 
@@ -46,7 +46,7 @@
         private static void ValidateImageUrl(string imageUrl)
         {
             if (!string.IsNullOrEmpty(imageUrl) && !imageUrl.StartsWith(UrlPlaceHolder))
-                throw new ArgumentException("A imagem deve vir do site 'https://placehold.co/'", nameof(imageUrl));
+                throw new ArgumentException("A imagem deve vir do site 'https://placehold.co/'");
         }
         public void RemoveImage()
         {
@@ -58,7 +58,7 @@
         }
         public void ChangeName(string newName)
         {
-            ArgumentException.ThrowIfNullOrWhiteSpace(newName, nameof(newName));
+            ArgumentException.ThrowIfNullOrWhiteSpace(newName);
 
             Name = newName;
         }
